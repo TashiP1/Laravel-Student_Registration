@@ -22,7 +22,6 @@ use App\Models\Customer;
 Route::get('/', [Demacontroller::class, 'home']);
 Route::get('/about', [Demacontroller::class, 'about']);
 Route::get('/courses', SingleActionController::class);
-Route::resource('photo', PhotoController::class);
 Route::get('/customer', [RegistrationController::class, 'index']);
 Route::get('/customer/view', [RegistrationController::class, 'view']);
 Route::post('/customer', [RegistrationController::class, 'register']);
